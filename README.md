@@ -37,9 +37,13 @@ Once Infra label work is done, we can follow below steps to run project
 
 Steps:
 a) run below command
+
 ```sh build.sh```
+
 this commannd will create two docker images , can check with command docker images
      
   b) run below command
+  
     ```sh run.sh```
+    
 this command will create the container
