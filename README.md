@@ -10,11 +10,11 @@ case of failures.
 4. Add run.sh which takes care of running your service on localhost:8080
 
 
-First install docker and start service on amazon linux machine using below command
+#### First install docker and start service on amazon linux machine using below command
 
      sudo yum install docker -y
      sudo service docker start
-Install docker compose using below command
+#### Install docker compose using below command
 
    a. Install docker compose
    ```
@@ -47,3 +47,8 @@ this commannd will create two docker images , can check with command docker imag
     ```sh run.sh```
     
 this command will create the container
+
+#### Run linter using below command
+```
+sh source_code/scripts/lint.sh
+```
