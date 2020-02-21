@@ -1,0 +1,24 @@
+version: "3.5"
+services:
+  my_app:
+    container_name: my-app-container
+    image: my-app-image
+    networks:
+      - overlay
+    ports:
+      - "8080:5000"
+    restart: always
+  
+  mysql-app:
+    container_name: mysql-app-container
+    image: mysql-app-image
+    ports:
+      - "3306:3306"
+    networks:
+      - overlay
+    restart: always
+
+networks:
+  overlay:
+
+
