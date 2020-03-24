@@ -1,7 +1,8 @@
 """
 Dependency injection module
 """
-import mysql.connector
+# import mysql.connector
+import psycopg2
 from src.datamanager.db_helper import DBHelper
 from src.datamanager.data_store import DBDatastore
 
@@ -17,9 +18,10 @@ class DIQuiz():
         Connection with mysql is done
         """
 
-        self.db_connection = mysql.connector.connect(host='localhost',\
+        self.db_connection = psycopg2.connect(host='localhost',\
                                          database='quiz',\
-                                         user='root',\
+                                         user='postgres',\
+                                         port="5432",\
                                          password='shamsad@123')
 
         self.db_helper = DBHelper(self.db_connection)

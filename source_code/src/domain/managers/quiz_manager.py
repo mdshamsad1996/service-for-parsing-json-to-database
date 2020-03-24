@@ -19,6 +19,7 @@ class QuizManager(IEntityManager):
         """
         Add quiz
         """
+        
         my_list = self.get_attribute_list(request_data)
 
         for my_dict_data in my_list:
@@ -33,6 +34,7 @@ class QuizManager(IEntityManager):
         """
         get attribute list
         """
+        
         question_list = []
         for val in request_data.values():
             for key_item, val_item in val.items():

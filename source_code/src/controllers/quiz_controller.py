@@ -25,4 +25,4 @@ class QuizController():
         """
         self.manager.add_record(requested_data)
 
-        return jsonify({'message': "Successfully inserted"})
+        return jsonify({'message': 'record successfully inserted'})
