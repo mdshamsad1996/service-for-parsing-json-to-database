@@ -18,7 +18,7 @@ class DIQuiz():
         Connection with mysql is done
         """
 
-        self.db_connection = psycopg2.connect(host='localhost',\
+        self.db_connection = psycopg2.connect(host='postgres-container',\
                                          database='quiz',\
                                          user='postgres',\
                                          port="5432",\

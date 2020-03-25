@@ -1,6 +1,0 @@
-FROM mysql:latest
-
-ENV MYSQL_DATABASE quiz
-ENV MYSQL_ROOT_PASSWORD shamsad@123
-
-COPY Database/ /docker-entrypoint-initdb.d 

@@ -1,7 +1,7 @@
-use quiz;
+\c quiz;
 
 create table if not exists quiz
-(question_id int auto_increment primary key,
+(question_id SERIAL primary key,
 category varchar(22), 
 question varchar(120),
 options_1 varchar(400),

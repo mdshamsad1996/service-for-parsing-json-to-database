@@ -2,18 +2,23 @@ version: "3.5"
 services:
   my_app:
     container_name: my-app-container
-    image: my-app-image
+    build:
+      context: .
+      dockerfile: Dockerfile
     networks:
       - overlay
     ports:
       - "8080:5000"
     restart: always
   
-  mysql-app:
-    container_name: mysql-app-container
-    image: mysql-app-image
+  
+  postgres-app:
+    container_name: postgres-container
+    build:
+      context: .
+      dockerfile: Dockerfile-mysql
     ports:
-      - "3306:3306"
+      - "5432:5432"
     networks:
       - overlay
     restart: always

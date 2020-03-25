@@ -1,0 +1,6 @@
+FROM postgres:alpine
+
+ENV POSTGRES_DB quiz
+ENV POSTGRES_PASSWORD shamsad@123
+
+COPY Database/ /docker-entrypoint-initdb.d 

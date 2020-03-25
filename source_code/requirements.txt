@@ -1,4 +1,4 @@
-flask = 1.0.4
-mysql-connector-python
+flask == 1.0.4
+psycopg2
 pylint
 pycodestyle
