@@ -36,10 +36,13 @@ Install docker compose using below command
 Once Infra label work is done, we can follow below steps to run project
 
 Steps:
-a) run below command
-```sh build.sh```
-this commannd will create two docker images , can check with command docker images
-     
-  b) run below command
-    ```sh run.sh```
-this command will create the container
+ run below command
+```docker-compose up```
+
+After executing, we will have two containers on our host one for our db services (postgress container) and my-app-container .
+
+For running web application open the brwoser and goto EC2-ip-address:5000/getrecrods
+
+To destroy the container run below command
+
+```docker-compose down --rmi all```
